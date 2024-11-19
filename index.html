@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id='title'>Anime Survey Form</h1>
+    <p id='description'>Please take this survey to see how much of an anime fan you are</p>
+    <form id='survey-form'>
+      <fieldset>
+      <label for='name' id='name-label'> Enter your name <input id='name' type='text' required placeholder='John Doe' class='inline'/>
+      <label for='email' id='email-label'> Enter your email <input id='email' type='email' required placeholder='abc@email.com' class='inline'/>
+      <label for='number' id='number-label'>Enter your age <input type='number' id='number' required placeholder='23' min=12 max='80' class='inline'/></label>
+
+    </fieldset>
+
+    <fieldset>
+      <label for='occupation>'>What is your current occuption<select id='dropdown' class='inline'>
+        <option value="" disabled selected>Select your currrent occupation</option>
+        <option value='1'>Student</option>
+        <option value='2'>Full-time employed</option>
+        <option value='3'>Part-time employed</option>
+        <option value='4'>Prefer not to say</option>
+        </select>
+
+        <label for='version'>Which version of anime do you watch?<label>
+        <label for='sun' class='line'>English Sub<input type='radio' name='version' value='1'/></label>
+        <label for='dub' class='line'>English Dub<input type='radio' name='version' value='2'/></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Anime you've watched(Tick all that apply)</legend>
+      <label><input type='checkbox' value='1'/>Naruto</label>
+      <label><input type='checkbox' value='2'/>DBZ</label>
+      <label><input type='checkbox' value='3'/>One Piece</label>
+      <label><input type='checkbox' value='4'/>Bleach</label>
+      <label><input type='checkbox' value='5'/>Pokemon</label>
+      <label><input type='checkbox' value='6'/>Tokyo Ghoul</label>
+      <label><input type='checkbox' value='7'/>Attack on Titan</label>
+      <label><input type='checkbox' value='8'/>Demon Slayer</label>
+      <label><input type='checkbox' value='9'/>
+      Death Note</label>
+      <label><input type='checkbox' value='10'/>JJK</label>
+
+<label for="recommendations">Provide extra anime recommendations:
+          <textarea id="recommendations" name="recommendations" rows="3" cols="30" placeholder="I would recommend also watching..."></textarea>
+        </label>
+    </fieldset>
+    <fieldset>
+      <label><input type='submit' id='submit'/></label>
+    </fieldset>
+    </form>
+
+  </body>
+  </html>
